@@ -8,6 +8,7 @@ let secretNumber = Math.floor(Math.random() * 20) + 1;
 let score = 20;
 let highScore = 0;
 
+//Make all functionalities by 'check' button
 document.querySelector(".check").addEventListener("click", () => {
   const guess = Number(
     (document.querySelector(".guess").value =
@@ -24,6 +25,11 @@ document.querySelector(".check").addEventListener("click", () => {
     document.querySelector(".score").textContent = score -= 1;
   } else if (guess === secretNumber) {
     document.querySelector(".message").textContent = "Correct Number!";
+    confetti({
+      particleCount: 150,
+      spread: 70,
+      origin: { y: 0.6 },
+    });
     document.querySelector(".number").textContent = secretNumber;
     document.querySelector(".check").disabled = true;
     document.querySelector("body").style.backgroundColor = "#60b347";
@@ -42,6 +48,7 @@ document.querySelector(".check").addEventListener("click", () => {
   }
 });
 
+//Reset the game by 'Again button'
 document.querySelector(".reset").addEventListener("click", () => {
   score = 20;
   secretNumber = Math.floor(Math.random() * 20) + 1;
@@ -54,9 +61,3 @@ document.querySelector(".reset").addEventListener("click", () => {
   document.querySelector(".number").style.backgroundColor = "#ffffff";
   document.querySelector(".number").style.color = "#000000";
 });
-
-// if (score > highScore) {
-//   document.querySelector(".highscore").textContent = score;
-// } else {
-//   document.querySelector(".highscore").textContent = highScore;
-// }
