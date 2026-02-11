@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess my number</title>
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        font-family: "Press Start 2P", system-ui;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white">
+    <header class="container mx-auto py-5">
+      <div class="flex justify-between items-center px-4">
+        <h2 class="py-5 px-8 bg-white text-black cursor-pointer rounded-lg">
+          Again!
+        </h2>
+        <p class="text-white py-5 ml-5">(Between 1 and 20)</p>
+      </div>
+    </header>
+    <section class="text-center text-white space-y-8 mt-20">
+      <h1 class="text-5xl mb-20">Guess My Number!</h1>
+      <div class="text-6xl border-4 p-10 w-[200px] mx-auto">?</div>
+    </section>
+
+    <section class="container mx-auto mt-20">
+      <div class="grid grid-cols-2 px-4 py-10">
+        <div class="left">
+          <input
+            type="text"
+            type="number"
+            class="border-4 block mb-10 w-[200px] py-15"
+          />
+          <button
+            class="py-5 px-8 bg-white cursor-pointer text-black rounded-lg"
+          >
+            Check!
+          </button>
+        </div>
+        <div class="right space-y-7 text-center">
+          <p class="message">Start guessing...</p>
+          <p class="label-score">💯 Score: <span class="score">20</span></p>
+          <p class="label-highscore">
+            🥇 Highscore: <span class="highscore"> 0</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+  <!-- <body>
+    <header>
+      <h1>Guess My Number!</h1>
+      <p class="between">(Between 1 and 20)</p>
+      <button class="btn again">Again!</button>
+      <div class="number">?</div>
+    </header>
+    <main>
+      <section class="left">
+        <input type="number" class="guess" />
+        <button class="btn check">Check!</button>
+      </section>
+      <section class="right">
+        <p class="message">Start guessing...</p>
+        <p class="label-score">💯 Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body> -->
+</html>
