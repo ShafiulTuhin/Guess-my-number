@@ -31,7 +31,9 @@
   <body class="bg-black text-white">
     <header class="container mx-auto py-5">
       <div class="flex justify-between items-center px-4">
-        <h2 class="py-5 px-8 bg-white text-black cursor-pointer rounded-lg">
+        <h2
+          class="reset py-5 px-8 bg-white text-black cursor-pointer rounded-lg"
+        >
           Again!
         </h2>
         <p class="text-white py-5 ml-5">(Between 1 and 20)</p>
@@ -39,15 +41,22 @@
     </header>
     <section class="text-center text-white space-y-8 md:mt-20 mt-10">
       <h1 class="text-5xl md:mb-20 mb-10">Guess My Number!</h1>
-      <div class="number text-6xl border-4 p-10 w-[200px] mx-auto">?</div>
+      <div
+        class="number text-6xl bg-white text-black rounded-lg p-10 w-[200px] mx-auto"
+      >
+        ?
+      </div>
     </section>
 
     <section class="container mx-auto md:mt-20 mt-10">
       <div class="grid grid-cols-2 px-4 py-10">
         <div class="left">
-          <input type="number" class="guess border-4 mb-10 w-[200px] py-15" />
+          <input
+            type="number"
+            class="guess border-4 rounded-lg mb-10 block w-[200px] py-15 text-center text-5xl font-bold"
+          />
           <button
-            class="py-5 px-8 bg-white cursor-pointer text-black rounded-lg"
+            class="check py-5 px-8 bg-white cursor-pointer text-black rounded-lg ml-4"
           >
             Check!
           </button>
